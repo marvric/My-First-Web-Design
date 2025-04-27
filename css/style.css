@@ -1,54 +1,54 @@
 /* ===== Custom Styles ===== */
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa;
-  }
-  
-  h1, h2, h3 {
-    color: #2c3e50;
-  }
-  
-  .navbar {
-    margin-bottom: 20px;
-  }
-  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: darkgrey; /* Light background */
+}
+
+h1, h2, h3 {
+  color: #1a5235; /* Dark green for headings */
+}
+
+.navbar {
+  margin-bottom: 20px;
+  background-color: #e6f4ec; /* Light green navbar */
+}
+
+.hero {
+  height: 90vh;
+  background: url('../images/hero-bg.jpg') center center/cover no-repeat;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+section {
+  padding: 60px 0;
+}
+
+/* Scroll to Top Button */
+#scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #1a5235; /* Dark green button */
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+#scrollBtn:hover {
+  background-color: #14422a; /* Even darker green hover */
+}
+
+/* Responsive Media Query */
+@media (max-width: 768px) {
   .hero {
-    height: 90vh;
-    background: url('../images/hero-bg.jpg') center center/cover no-repeat;
-    color: white;
-    text-shadow: 2px 2px 4px #000;
-  }
-  
-  section {
-    padding: 60px 0;
-  }
-  
-  /* Scroll to Top Button */
-  #scrollBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: #0d6efd;
-    color: white;
-    cursor: pointer;
-    padding: 12px;
-    border-radius: 50%;
-  }
-  
-  #scrollBtn:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Responsive Media Query */
-  @media (max-width: 768px) {
-    .hero {
       height: 60vh;
-    }
   }
-  
+}
